@@ -1,0 +1,118 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+.main {
+   width: 100%;
+   height: 100vh;
+   background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url("https://assets.nflxext.com/ffe/siteui/vlv3/f85718e8-fc6d-4954-bca0-f5eaf78e0842/ea44b42b-ba19-4f35-ad27-45090e34a897/IN-en-20230918-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+   background-size: cover;
+   
+}
+.navbar{
+   width: 100%;
+   height: 2.8rem;
+   color:aliceblue;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 1rem;
+   
+}
+.navbar-brand{
+   color:red;
+   font-size: larger;
+   padding-left: 1.5rem;
+   cursor: pointer;
+
+}
+.navbar-brand:hover{
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: red;
+}
+.nav-opt{
+   padding-right: 1.5rem;
+   margin: 0.5rem;
+}
+.nav-opt .btn{
+   background:transparent ;
+   margin: 1rem;
+   border: none;
+}
+.content{
+   width: 100%;
+   color: aliceblue;
+   text-align: center;
+   position: relative;
+   top: 35%;
+
+}
+.content h1{
+   
+   font-weight: 1000;
+   font-size: 2rem;
+   flex-wrap: wrap;
+   padding-left: 1rem;
+   padding-right:1rem ;
+}
+@media(min-width:960px){
+   .content h1{
+      font-size: 3rem;
+   }
+}
+ .content p{
+   font-size: 1.7rem;
+   font-weight: 400;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+.content .text{
+   font-size: 1.2rem;
+   flex-wrap: wrap;
+}
+
+.btn:hover{
+   background-color: red;
+}
+
+.inp-sec{
+   width: 100%;
+   height: 5rem;
+   /* text-align: center; */
+   padding-left:1rem ;
+   padding-right: 1rem;
+}
+.inp-sec input{
+   height: 54px;
+   width: 40%;
+   background-color: black;
+   color:white;
+   border: none;
+   border-radius: 0.5rem;
+   border:1px solid white;
+}
+.inp-sec .btn{
+   height: 54px;
+   width: 15%;
+   font-size: 1rem;
+}
+.inp-sec input::placeholder{
+   padding-left: 1rem;
+}
+@media(max-width:390px){
+   .inp-sec input{
+      /* display: block; */
+      width: 80%;
+   }
+   .inp-sec .btn{
+      margin-top: 1rem;
+      width: 50%;
+   }
+   .nav-opt .btn{
+      display: inline;
+      margin: 0;
+      margin-left: -10px;
+   }
+}
